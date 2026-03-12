@@ -2,8 +2,7 @@
 
 $error = [];
 
-function validateForm()
-{
+function validateForm(){
 
     global $error;
 
@@ -21,8 +20,8 @@ function validateForm()
 
 $formIsValid = $_SERVER["REQUEST_METHOD"] === "POST" && validateForm();
 
-if ($formIsValid){
-  if(isset($_POST["name"])){
+if(isset($_POST["name"])){
+  if ($formIsValid){
     $name = htmlspecialchars($_POST["name"]);
     $age = htmlspecialchars($_POST["age"]);
     $role = htmlspecialchars($_POST["role"]);
@@ -31,7 +30,7 @@ if ($formIsValid){
       } elseif ($_POST["role"] == "Directeur") {
         echo "Félicitations $name ⭐!, votre profile de $role a été enregistré.";
       } else {
-      echo "Félicitations $name ⭐!, votre profile de $role a été enregistré.";
+      echo "Félicitations $name !, votre profile de $role a été enregistré.";
     }
   } else {
     foreach($error as $err){

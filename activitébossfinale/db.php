@@ -1,8 +1,8 @@
 <?php
-$dsn = "mysql:host=localhost;dbname=mon_site;charset=utf8";
+$dsn = "mysql:host=localhost;port=3306;charset=utf8";
 $user = "root";
 $password = "";
- 
+
 try {
     // On instancie l'objet PDO (c'est notre clé d'accès)
     $db = new PDO($dsn, $user, $password);

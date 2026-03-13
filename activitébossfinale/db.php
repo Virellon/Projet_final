@@ -1,5 +1,5 @@
 <?php
-$dsn = "mysql:host=localhost;dbname=collaborateurs;charset=utf8";
+$dsn = "mysql:host=localhost;port=3306;dbname=collaborateurs;charset=utf8";
 $user = "root";
 $password = "";
  

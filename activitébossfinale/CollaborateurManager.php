@@ -7,8 +7,7 @@ class CollaborateurManager {
     }
 
   public function GetAll() {
-      return $this->pdo->query"select , *FROM CollaborateurManager"->fetchAll();
-
+      return $this->pdo->query->fetchAll();
   }
   public function add(Collaborateur $collab) {
 
@@ -16,10 +15,9 @@ class CollaborateurManager {
   $stmt = $pdo->query($sql);
   $resultats = $stmt->fetchAll();
   $stmt->execute([
-  $collab-> GetNom();
-  $collab-> GetAge();
-  $collab-> GetRole();
-
+    $collab-> getNom(),
+    $collab-> getAge(),
+    $collab-> getRole()
   ]);
   }
 

@@ -1,4 +1,9 @@
 <?php
+
+
+require_once './activitébossfinale/collaborateur.php';
+require_once './activitébossfinale/CollaborateurManager.php';
+require_once './activitébossfinale/db.php';
 $collaborateurs = [
     [
         "nom" => "Alice Martin",

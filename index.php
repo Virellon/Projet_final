@@ -56,8 +56,14 @@ text-decoration:none;
 background:#ddd;
 }
 </style>
+ <nav>
+    <ul>
+      <li><a href="./formulaire_post/post.php">Post et Conditions</a></li>
+  </ul>
+</nav>
 </head>
 <body>
+
 <h1>Nexus Dynamic - Collaborateurs</h1>
 <form method="GET">
 <input type="text"

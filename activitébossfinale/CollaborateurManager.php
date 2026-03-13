@@ -29,7 +29,7 @@ $stmt = $this->pdo->prepare("DELETE FROM collaborateurs WHERE id=?");
     }
 
     public function search($motCle){
-$stmt = $this->pdo->prepare("SELECT *FROM collaborateurs ,WHERE nom like");
+$stmt = $this->pdo->prepare("SELECT * FROM collaborateurs ,WHERE nom like");
 $stmt->execute([$motCle]);
 
 }

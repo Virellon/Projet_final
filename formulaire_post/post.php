@@ -53,6 +53,11 @@ if(isset($_POST["name"])){
 <body>
     <header>
         <h1>Nexus Dynamic</h1>
+  <nav>
+    <ul>
+        <li><a href="../index.php">Maison</a></li> <!-- normalement faut mettre https?://blablabla.bla-->
+    </ul>
+</nav>
     </header>
 
     <main>
